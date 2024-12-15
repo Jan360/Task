@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+   <header>
+   </header>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 fixed-top position-relative"> 
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand logo">Бренд</a>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#catalog">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#prices">Цены</a>
+          </li>
+        </ul>
+
+        <button type="button" class="btn btn-primary custom-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="bi bi-telephone-fill text-white fs-6"></i>
+          Заказать звонок
+        </button>
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary navbar-toggler custom-rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="bi bi-telephone-fill text-white fs-6"></i>
+        </button>
+        <button type="button" class="navbar-toggler custom-rounded" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+      </div>
+      
+      <div class="collapse offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Меню</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#catalog">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prices">Цены</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Модальное окно -->
+  <div class="modal" id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HOME -->
+   <div class="home ">
+    <div class="position-relative overflow-hidden" style="width: 100%; height:100vh; ">
+      <video autoplay muted loop id="video" class="position-absolute top-0 start-0 z-n1"
+ style="min-width: 100%; min-height: 100%; filter: brightness(40%)">
+        <source src="https://gitrequests.github.io/interview-bootstrap/assets/video.mp4" type="video/mp4">
+      </video>
+      <div class="text-center text-md-start text-white" style="margin: 10% 15%;">
+        <h2>Купить <span class="text-danger">товар</span> с доставкой</h5>
+        <h5>Официальный поставщик <span class="text-danger">товаров</span> в Стране!</h4>
+        <div class="d-flex flex-column flex-md-row justify-content-between" style="margin-top: 15rem">
+          <button class="btn btn-purple custom-rounded text-white border-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать звонок</button>
+          <p>Ваши данные<br> под надежной защитой</p>
+        </div>
+      </div>
+    </div>
+   </div>
+   <!-- HEADER -->
+   <section class="catalog position-relative" id="catalog">
+    <div class="bg-dark">
+      <h3 class="text-white text-center" style="padding: 0.5rem;">Каталог</h3>
+    </div>
+    <!-- CATALOG -->
+    <div class="d-flex flex-wrap" style="margin-left: 5%; gap: 1rem">
+      <div class="card">
+        <div class="image">
+          <img src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp" class="img-fluid" alt="Space">
+        </div>
+        <div class="d-flex flex-column" style="margin: 0.5rem;">
+          <h3>Товар 1</h3>
+          <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <ul>
+            <li>An item</li>
+            <li>A second item</li>
+            <li>A third item</li>
+          </ul>
+          <div></div>
+          <div>
+            <button class="btn btn-primary custom-rounded w-100">Купить</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="https://gitrequests.github.io/interview-bootstrap/assets/image.webp" class="img-fluid" alt="Space">
+        </div>
+        <div style="margin: 0.5rem; height: 100%;">
+          <h3 >Товар 2</h3>
+          <div></div>
+          <div  style="margin-top: 45%;">
+            <button class="btn btn-primary custom-rounded w-100">Купить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <footer></footer>
+</body>
+</html>

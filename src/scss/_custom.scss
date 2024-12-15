@@ -1,0 +1,20 @@
+// Кнопка
+.btn-purple {
+  background-color: $purple;
+  // border: none;
+  &:hover {
+      background-color: darken($purple, 10%);
+  }
+}
+
+.custom-rounded {
+  border-radius: 0 28px 0 28px;
+}
+.card {
+  max-width: 375px;
+  border-radius: 0.5rem;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
